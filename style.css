@@ -1,0 +1,101 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   font-family: 'Lexend Deca', sans-serif;
+}
+
+h3 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 25px;
+}
+p {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+img {
+    margin-bottom: 20px;
+}
+.heading {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 800px;
+    margin: auto;
+}
+.card {
+    padding: 45px 30px;
+    flex: 1;
+    
+}
+.card1 {
+    background-color: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+.card2 {
+    background-color: var(--dark-cyan);
+}
+.card3 {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    border-radius: 15px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+    background-color: transparent;
+    color:  hsl(0, 0%, 95%);
+}
+.btn1 {
+    color: var(--bright-orange);
+}
+
+.btn2 {
+    color: var(--dark-cyan);
+}
+
+.btn3 {
+    color: var(--very-dark-cyan);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 50px;
+    }
+    .card1 {
+        border-radius: 10px 10px 0 0;
+    }
+    .card3 {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
